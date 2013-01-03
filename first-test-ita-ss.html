@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Начало работы</title>
+    <meta name="description" content="Тестовое задание на первом уроке.">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<script type="text/javascript">
+
+
+    function biger(num1, num2, num3){
+        if (num1>num2 && num1>num3){
+            document.write("Первое число "+num1+" больше остальных."+"<br />"+"<br />");
+        }
+        else if (num2>num1 && num2>num3){
+            document.write("Второе число "+num2+" больше остальных."+"<br />"+"<br />");
+        }
+        else{
+            document.write("Третье число "+num3+" больше остальных."+"<br />"+"<br />");
+        }
+    }
+
+    var a= 3, b= 5, c=7;
+    document.write("Чисел "+a+" ,"+b+" ,"+c+"."+"<br />");
+    biger(a,b,c);
+
+    //функция, которая возвращает максимальный элемент массива
+    function maxnum(v){
+        var n=v[0];
+        for (var i=1; i< v.length-1; i++){
+            if (v[i]>n){
+                n=v[i];
+            }
+        }
+        return n;
+    }
+
+    // функция, которая возвращает минимальный элемент массива
+    function minnum(v){
+        var m=v[0];
+        for (var i=1; i< v.length-1; i++){
+            if (v[i]<m){
+                m=v[i];
+            }
+        }
+        return m;
+    }
+    var masive=[5,7,24,4,12,-2,3];
+
+    document.write("Максимальный элемент в массиве "+masive+" является "+maxnum(masive)+"."+"<br />");
+    document.write("Минимальный элемент в массиве "+masive+" является "+minnum(masive)+"."+"<br />"+"<br />");
+
+    //вывод индекса максимального и минимального числа массива
+    document.write("Индекс максимального элемета массива "+masive.indexOf(maxnum(masive))+"<br />");
+    document.write("Индекси минимального элемнета массива "+masive.indexOf(minnum(masive))+"<br />");
+
+    // копия массива
+    var newmasive=masive.slice();
+    document.write("Копия массива "+newmasive+"<br />"+"<br />");
+
+    //сортировка, по возрастанию
+    function sortedtop(i,ii){
+        if (i>ii){
+            return 1;
+        }
+        else if(i<ii){
+            return -1;
+        }
+        else{
+            return 0;
+        }
+    }
+
+    //сортировка по убыванию
+    function sorteddown(i,ii){
+        if (i>ii){
+            return -1;
+        }
+        else if(i<ii){
+            return 1;
+        }
+        else{
+            return 0;
+        }
+    }
+
+    document.write("Массив "+masive+" отсортирован по возростанию "+masive.sort(sortedtop)+"<br />");
+    document.write("Массив "+masive+" отсортирован по убыванию "+masive.sort(sorteddown)+"<br />");
+
+
+
+</script>
+
+</body>
+</html>
