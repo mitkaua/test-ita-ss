@@ -1,0 +1,34 @@
+<?xml version="1.1"?>
+<directory>
+   <book id="1">
+   <author>Стив Макконнел</author>
+   <name>Совершенный код</name>
+   <publisher>Русская редакция</publisher>
+   <description>классика программирования, более 10 лет лучшее практическое руководство по прогроммированию,...</description>
+   <material>книга</material>
+   </book>
+
+   <book id="2">
+   <author>Васильев Алексей</author>
+   <name>Java. ООП. Учебное пособие</name>
+   <publisher>Питер</publisher>
+   <description>чебное пособие предназначено для изучающих объектно-ориентированное программирование в вузе,..</description>
+   <material>книга</material>
+   </book>
+
+   <book id="3">
+   <author>Г.Лакман Макдауэлл</author>
+   <name>карьера программиста</name>
+   <publisher>Питер</publisher>
+   <description>Книга поможет правильно подготовиться к собеседованию при приеме на работу в крупную IT-организацию или перспективный стартап.</description>
+   <material>книга</material>
+   </book>
+
+   <book id="4">
+   <author>Марк Лутц</author>
+   <name>Изучаем Python</name>
+   <publisher>Символ</publisher>
+   <description>Марк Лутц - автор книг «Programming Python» и «Python Pocket Reference».</description>
+   <material>эл.вариант</material>
+   </book>
+</directory>

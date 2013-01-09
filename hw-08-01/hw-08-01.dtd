@@ -1,0 +1,7 @@
+<! ELEMENT directory (book*)>
+<! ELEMENT book (author, name, publisher?, description, material?)>
+<! ELEMENT autor (#PCDATA)>
+<! ELEMENT name (#PCDATA)>
+<! ELEMENT publisher (#PCDATA)>
+<! ELEMENT description (#PCDATA)>
+<! ELEMENT material (#PCDATA)>
